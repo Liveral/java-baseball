@@ -43,6 +43,16 @@ public class Game {
         }
     }
 
-
+    public static void printResult() { //매개변수로 받은 스트라이크와 볼의 수에 따라 출력이 달라진다.
+        if (strike == 0 && ball == 0) {
+            System.out.println("낫싱");
+        } else if (strike == 0) {
+            System.out.printf("%d볼\n", ball);
+        } else if (ball == 0) {
+            System.out.printf("%d스트라이크\n", strike);
+        } else {
+            System.out.printf("%d볼 %d스트라이크\n", ball, strike);
+        }
+    }
 }
 
