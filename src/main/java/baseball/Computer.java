@@ -8,6 +8,9 @@ public class Computer {
     private static ArrayList<Integer> computerNumber;
 
     public Computer() {
+    }
+
+    public void setComputerNumber() {
         ArrayList<Integer> computer = new ArrayList<>();
 
         while (computer.size() < 3) {
