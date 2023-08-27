@@ -5,17 +5,22 @@ import java.util.ArrayList;
 import camp.nextstep.edu.missionutils.Randoms;
 
 public class Computer {
+    private static ArrayList<Integer> computerNumber;
 
-    public static ArrayList<Integer> setRandomNumber() {
+    public Computer() {
+        ArrayList<Integer> computer = new ArrayList<>();
 
-        ArrayList<Integer> randomNumberList = new ArrayList<>();
-        while (randomNumberList.size() < 3) {
+        while (computer.size() < 3) {
             int randomNumber = Randoms.pickNumberInRange(1, 9);
-            if (!randomNumberList.contains(randomNumber)){
-                randomNumberList.add(randomNumber);
+
+            if (!computer.contains(randomNumber)) {
+                computer.add(randomNumber);
             }
         }
 
-        return randomNumberList; //랜덤으로 만든 3자리 숫자를 return해준다.
+        this.computerNumber = computer; //랜덤으로 만든 3자리 숫자를 return해준다.
+    }
+
+    public void setRandomNumber() {
     }
 }
