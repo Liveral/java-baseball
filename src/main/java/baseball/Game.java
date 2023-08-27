@@ -26,7 +26,7 @@ public class Game {
     }
 
     public static void getStrikeAndBall() { //스트라이크인지 체크하고, 아니면 볼인지 체크한다.
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < Constants.NUMBER_LENGTH; i++) {
             //컴퓨터와 사용자의 3자리 숫자를 각 자릿수 별로 같은 자리에 같은 숫자가 있는지 확인하고, 있으면 스트라이크 없으면 볼 체크 함수를 불러온다.
             if (computerNumbers.getComputerNumberIdx(i) == userNumbers.getUserNumberIdx(i)) {
                 strike++;

@@ -13,7 +13,7 @@ public class Computer {
     public void setComputerNumber() {
         ArrayList<Integer> computer = new ArrayList<>();
 
-        while (computer.size() < 3) {
+        while (computer.size() < Constants.NUMBER_LENGTH) {
             int randomNumber = Randoms.pickNumberInRange(1, 9);
 
             if (!computer.contains(randomNumber)) {
