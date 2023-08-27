@@ -18,10 +18,15 @@ public class Computer {
             }
         }
 
-        this.computerNumber = computer; //랜덤으로 만든 3자리 숫자를 return해준다.
+        this.computerNumber = computer; //랜덤 3자리 숫자를 생성한다.
     }
 
     public ArrayList<Integer> getComputerNumber() {
         return computerNumber;
     }
+
+    public int getComputerNumberIdx(int idx) { //특정 인덱스의 숫자를 리턴하는 함수
+        return computerNumber.get(idx);
+    }
+
 }

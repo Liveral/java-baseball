@@ -22,7 +22,11 @@ public class User {
         this.userNumber = user;
     }
 
-    public static ArrayList<Integer> getUserNumber() {
+    public ArrayList<Integer> getUserNumber() {
         return userNumber;
+    }
+
+    public int getUserNumberIdx(int idx) {
+        return userNumber.get(idx);
     }
 }
