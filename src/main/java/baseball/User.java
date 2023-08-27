@@ -23,6 +23,7 @@ public abstract class User {
     }
 
     public static ArrayList<Integer> getUserNumber() {
+        
         return userNumber;
     }
 }
