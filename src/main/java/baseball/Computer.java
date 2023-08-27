@@ -21,6 +21,7 @@ public class Computer {
         this.computerNumber = computer; //랜덤으로 만든 3자리 숫자를 return해준다.
     }
 
-    public void setRandomNumber() {
+    public ArrayList<Integer> getComputerNumber() {
+        return computerNumber;
     }
 }
