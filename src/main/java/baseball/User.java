@@ -21,4 +21,8 @@ public abstract class User {
 
         this.userNumber = imputNumber;
     }
+
+    public static ArrayList<Integer> getUserNumber() {
+        return userNumber;
+    }
 }
