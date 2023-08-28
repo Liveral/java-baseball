@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import camp.nextstep.edu.missionutils.Randoms;
 
 public class Computer {
-    private static ArrayList<Integer> computerNumber;
+    private ArrayList<Integer> computerNumber;
 
     public Computer() {
     }
